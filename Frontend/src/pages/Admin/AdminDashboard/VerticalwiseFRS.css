@@ -1,0 +1,157 @@
+.verticalwise1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.grid6 {
+  background-color: white;
+  flex: 1;
+  margin: 5px 10px 5px 0px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.grid6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid6 img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.icon1 {
+  font-size: 6px;
+  margin-bottom: 10px;
+}
+
+.name2 {
+  font-size: 20px;
+  color: #1976D2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score {
+  display: flex;
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.positive-score {
+  color: green;
+  font-size: 16px;
+  background-color: #e0f7e9;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+}
+
+.negative-score {
+  color: red;
+  font-size: 16px;
+  background-color: #fbeaea;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.score-icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .verticalwise1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .verticalwise1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .verticalwise1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .grid6 {
+    height: 500px;
+  }
+  .grid6 img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  
+  .icon1 {
+    font-size: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .name2 {
+    font-size: 50px;
+    color: #1976D2;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .score {
+    display: flex;
+    font-weight: bold;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .positive-score {
+    color: green;
+    font-size: 46px;
+    background-color: #e0f7e9;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+  }
+  
+  .negative-score {
+    color: red;
+    font-size: 46px;
+    background-color: #fbeaea;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+  }
+  
+  .score-icon {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,183 @@
+.new-grid2 {
+  background-color: white;
+  border-radius: 5px;
+  width: calc(33.33% - 10px);
+  padding: 20px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.recent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #616161;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.table-container2 {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.table2 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table2 th, .table2 td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: left;
+}
+
+.table2 th {
+  background-color: #f4f4f4;
+  color: #1a237e;
+  text-align: center;
+}
+
+.table2 td {
+  text-align: center;
+  color: #424242;
+}
+
+.button5 {
+  padding: 2px 4px;
+  border: 1px solid #2196f3;
+  background-color: #e3f2fd;
+  color: #2196f3;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.button5:hover {
+  background-color: #90caf9;
+}
+
+.empty-message {
+  text-align: center;
+  color: #757575;
+  font-size: 18px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px; /* Increased width for better readability */
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures content does not overflow */
+}
+
+/* Close button */
+.modal-close-button {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  color: #2196f3;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close-button:hover {
+  color: #1976d2;
+}
+
+/* Modal content */
+.modal-content {
+  padding-bottom: 50px; /* Adjust for space at the bottom for close button */
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196f3; /* Consistent with button color */
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b3e5fc;
+}
+
+.modal-body {
+  font-size: 16px;
+  line-height: 2.5;
+  border-bottom: 1px solid #b3e5fc;
+}
+
+.modal-body p {
+  margin: 10px 0;
+  display: flex;
+  align-items: baseline; /* Align label and content */
+  color: #616161;
+}
+
+.modal-body strong {
+  width: 170px; /* Fixed width for labels */
+  color: #2196f3; /* Highlight labels */
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  .new-grid2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .table-container2 {
+    height: 700px;
+  }
+  .table2 {
+    height: 800px;
+  }
+  .table2 th {
+    font-size: 32px;
+  }
+  
+  .table2 td {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .table-container2 {
+    height: 700px;
+  }
+  .table2 {
+    height: 800px;
+  }
+  .table2 th {
+    font-size: 28px;
+  }
+  .table2 td {
+    font-size: 22px;
+  }
+}

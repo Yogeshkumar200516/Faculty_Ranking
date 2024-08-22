@@ -1,0 +1,35 @@
+.recent-updates {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .grid2 {
+    background-color: pink;
+    flex: 1;
+    margin: 5px 10px 5px 0px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
+    .recent-updates {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid2 {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .recent-updates {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

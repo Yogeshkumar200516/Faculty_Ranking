@@ -1,0 +1,162 @@
+.verticalwise {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  background-color: white;
+  flex: 1;
+  margin: 5px 10px 5px 0px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid:hover {
+  background-color: #e3f2fd;
+}
+
+.verticalwise > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  color: #1976D2;
+  font-weight: bold;
+}
+
+.frs-title {
+  color: blue;
+}
+
+.frs-score {
+  color: #2e7d32;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    height: 150px;
+  }
+  .grid img {
+    width: 40px;
+    height: 40px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .frs-score {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .grid {
+    height: 150px;
+  }
+  .grid img {
+    width: 35px;
+    height: 35px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .frs-score {
+    font-size: 20px;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 860px) {
+  .grid {
+    height: 120px;
+  }
+  .grid img {
+    width: 25px;
+    height: 25px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .frs-score {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .verticalwise {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+  }
+  .grid {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  .grid img {
+    width: 30px;
+    height: 30px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .frs-score {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .verticalwise {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .verticalwise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid {
+    height: 300px;
+  }  
+  .grid img {
+    width: 110px;
+    height: 110px;
+  }
+  .name {
+    font-size: 28px;
+  }
+  .frs-score {
+    color: #2e7d32;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}

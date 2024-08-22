@@ -1,0 +1,32 @@
+.new-grid {
+    background-color: white;
+    border-radius: 5px;
+    width: calc(40% - 10px);
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid-head {
+    color: #616161;
+    font-weight: bold;
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .new-grid {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .grid-head {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+  }
+  

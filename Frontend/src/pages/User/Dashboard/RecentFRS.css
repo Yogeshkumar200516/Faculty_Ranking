@@ -1,0 +1,101 @@
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); }
+  to { transform: translateY(0); }
+}
+
+/* Recent FRS Table Styles */
+.recent-frs {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: dimgray;
+}
+
+.recent-frs-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  outline: 1px solid #007bff;
+}
+
+.recent-frs-table th, .recent-frs-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.recent-frs-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.recent-frs-table tr:nth-child(even) {
+  background-color: #E3F2FD;
+}
+
+.recent-frs-table tr:hover {
+  background-color: #ECEFF1;
+}
+
+.recent-frs-table td {
+  border-bottom: 1px solid #BBDEFB;
+}
+
+.recent-frs-table th:first-child,
+.recent-frs-table td:first-child {
+  border-top-left-radius: 5px;
+}
+
+.recent-frs-table th:last-child,
+.recent-frs-table td:last-child {
+  border-top-right-radius: 8px;
+}
+
+.frs-value.positive {
+  color: green;
+  font-weight: bold;
+}
+
+.frs-value.negative {
+  color: red;
+  font-weight: bold;
+}
+
+.view-button {
+  background-color: #E3F2FD;
+  border: 1px solid #1e90ff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e90ff;
+}
+
+.view-button:hover {
+  background-color: #bbdefb;
+}
+
+.view-button:focus {
+  outline: none;
+}
+
+.view-button:active {
+  background-color: #90caf9;
+}
+
+@media (max-width: 500px) {
+
+}

@@ -1,0 +1,71 @@
+.grid-full2 {
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 450px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grid2-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  color: #616161;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-right: 0px;
+}
+
+.data-grid-wrapper {
+  flex: 1;
+  overflow: auto;
+}
+
+
+.custom-header .MuiDataGrid-columnHeaderTitle {
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.custom-header2 .MuiDataGrid-columnHeaderTitle {
+  font-weight: bold;
+  color: #1a237e;
+  margin-left: 10px;
+}
+
+.view-all-button5 {
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: space-between;
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: 650px;
+}
+
+.view-all-button5:hover {
+  background-color: #90caf9;
+  color: #0d47a1;
+  border: 1px solid #0d47a1;
+}
+
+@media (max-width: 900px) {
+  .grid-full2 {
+    width: 100%;
+    height: 600px;
+  }
+  .data-grid-wrapper {
+    width: 100%;
+  }
+}

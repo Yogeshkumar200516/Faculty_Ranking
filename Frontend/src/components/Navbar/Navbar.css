@@ -1,0 +1,86 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MiniDrawer styles */
+.Navbar {
+  display: flex;
+}
+
+.MuiDrawer-root {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.MuiDrawer-paper {
+  width: 240px;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+}
+
+.MuiDrawer-paperClose {
+  width: 72px;
+}
+
+.MuiAppBar-root {
+  transition: width 0.3s ease;
+  z-index: 900;
+}
+
+.MuiAppBar-shift {
+  width: calc(100% - 240px);
+}
+
+.MuiAppBar-shift.MuiAppBar-auto {
+  width: auto;
+}
+
+.MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiIconButton-root {
+  margin-left: -12px;
+}
+
+.MuiTypography-root {
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+.MuiListItemIcon-root {
+  min-width: 36px;
+}
+
+.MuiListItem-root {
+  display: block;
+}
+
+.MuiListItemButton-root {
+  min-height: 48px;
+  padding-left: 24px;
+}
+
+.MuiListItemButton-root.Mui-selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.MuiListItemIcon-root,
+.MuiListItemText-root {
+  opacity: 1;
+}
+
+.MuiDrawerHeader-root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.MuiDrawerHeader-toolbar {
+  min-height: 56px;
+}

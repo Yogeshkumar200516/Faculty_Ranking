@@ -1,0 +1,19 @@
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: none; /* Background color for the container */
+  border-radius: 10px;     /* Rounded corners */
+}
+
+.pie-chart {
+  max-width: 100%; /* Ensure the chart is responsive */
+}
+
+@media (max-width: 1024px) {
+  .pie-chart-container {
+    flex-direction: column; /* Change layout to column */
+  }
+}

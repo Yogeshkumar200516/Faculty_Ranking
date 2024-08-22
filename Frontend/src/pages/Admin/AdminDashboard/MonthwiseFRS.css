@@ -1,0 +1,42 @@
+.grid-full {
+  background-color: white;
+  border-radius: 5px;
+  width: calc(60% - 10px); /* Adjusted for more precise layout */
+  padding: 20px;
+  text-align: center;
+  margin-right: 10px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.chart {
+  color: #616161;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.monthwise-notes {
+  color: #c8d8cc;
+}
+
+@media (max-width: 1024px) {
+  .grid-full {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .chart {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+}

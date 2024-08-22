@@ -1,0 +1,150 @@
+body {
+  background-image: url('../../assets/images/login_back.png');
+}
+
+.login-container {
+  display: grid;
+  height: auto;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  grid-template-columns: 2fr 3fr;
+  outline: 1px solid #E0E0E0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px; /* Reduce max-width for a smaller container */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  margin: 50px auto; /* Center the container and add margin for spacing */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better look */
+}
+
+.left {
+  border-radius: 15px;
+  background-color: #ECEFF1;
+  background-image: url('../../assets/images/login2_back.png');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  margin: 0px;
+}
+
+.login-left {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 20px;
+}
+
+.login-subtitle {
+  font-size: 15px;
+  margin: 20px;
+  color: dimgray;
+}
+
+.login-illustration img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Reduce padding for better spacing */
+  background-color: #fff;
+}
+
+.login-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.login-signin {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-access {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 100%;
+  margin: 20px 0;
+  color: #ECEFF1;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-button-google {
+  width: 100%;
+  padding: 10px;
+  background-color: #42A5F5; /* Google red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-button-google:hover {
+  background-color: #448AFF; /* Darker shade of Google red */
+}
+
+.google-icon {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    max-width: 90%; /* Ensure responsiveness */
+  }
+
+  .login-illustration {
+    display: none; /* Hide the illustration on small screens */
+  }
+
+  .login-logo {
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+
+  .left {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .login-right {
+    padding: 20px;
+  }
+}
