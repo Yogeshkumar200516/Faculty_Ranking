@@ -3,6 +3,7 @@ const mysql = require('mysql2/promise');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
+require('dotenv').config(); // Load environment variables from .env file
 
 const { sendEmail } = require('./emailService.jsx');
 const app = express();
@@ -11,10 +12,10 @@ app.use(bodyParser.json());
 const SECRET_KEY = '3f102fd66ccbca0aadeed03cd0d31278c85503b5a4a708818a6db3420d8ba5973';
 
 const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'Yogesh@200516',
-    database: 'faculty_project'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 });
 
 const corsOptions = {

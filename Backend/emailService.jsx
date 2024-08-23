@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+require('dotenv').config(); // Load environment variables
 
 const transporter = nodemailer.createTransport({
   service:'gamill',
@@ -6,9 +7,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Use 465 for SSL
   secure: false, // true for 465, false for other ports
   auth: {
-    user: 'yogeshkumar.s.radha@gmail.com',
-    pass: 'zltb irvv hvqm btrw',
-
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
   tls: {
     rejectUnauthorized: false
@@ -20,7 +20,7 @@ const sendEmail = async (to, subject, text) => {
     await transporter.sendMail({
       from: {
         name:'FRS Vertical',
-        address: 'yogeshkumar.s.radha@gmail.com', 
+        address: process.env.EMAIL_USER,
       },
       to,
       subject,
